@@ -117,16 +117,16 @@ packages:
   original:
     hackage: splitmix-0.1.0.4
 - completed:
-    commit: 3b1b2ea4728fc32fd04c6e4df63052511e45c4bf
-    git: https://github.com/RobinWebbers/hrubric.git
+    commit: f26a5f1f612ff58d1a0204b06cafa286ab74c077
+    git: https://github.com/Verification-for-Security/hrubric.git
     name: hrubric
     pantry-tree:
-      sha256: c6ceb327e174da41992a463b88b62e159bb9bd274f6c827b1037dd4f76269ef1
+      sha256: 69b1667733fced434ca9b55ddccf7bf8bb5555e08b77ce07cc98cf8e5979b7b1
       size: 517
     version: 0.1.0.0
   original:
-    commit: 3b1b2ea4728fc32fd04c6e4df63052511e45c4bf
-    git: https://github.com/RobinWebbers/hrubric.git
+    commit: f26a5f1f612ff58d1a0204b06cafa286ab74c077
+    git: https://github.com/Verification-for-Security/hrubric.git
 - completed:
     hackage: simplex-method-0.1.0.0@sha256:308cb0b129e5475df1250e6666c58571f2161276d0b9f29ed8171524ba67591c,1462
     pantry-tree:
