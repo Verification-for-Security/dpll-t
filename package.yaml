@@ -1,0 +1,82 @@
+name:                dpll-t
+version:             0.1.0.0
+github:              "githubuser/dpll-t"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2022 Author name here"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/dpll-t#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- mtl
+- transformers
+- containers
+- parsec
+- text
+- simplex-method 
+
+default-extensions:
+- ConstraintKinds
+- DeriveTraversable
+- FlexibleContexts
+- FlexibleInstances
+- GeneralizedNewtypeDeriving
+- LambdaCase
+- StandaloneDeriving
+- TypeFamilies
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: 
+  - src
+
+executables:
+  dpll-t-exe:
+    main: Main.hs
+    source-dirs:
+    - app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - dpll-t
+
+tests:
+  dpll-t-test:
+    main: Spec.hs
+    source-dirs:
+    - test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - dpll-t
+    - hspec
+    - hspec-core
+    - HUnit
+    - hrubric
+    - ansi-terminal

@@ -1,0 +1,27 @@
+resolver: ghc-9.4.6
+
+packages:
+- .
+
+extra-deps:
+- hspec-2.11.4
+- hspec-core-2.11.4
+- hspec-discover-2.11.4
+- hspec-expectations-0.8.4
+- HUnit-1.6.2.0
+- call-stack-0.4.0
+- ansi-terminal-1.0
+- ansi-terminal-types-0.11.5
+- colour-2.3.6
+- tf-random-0.5
+- primitive-0.8.0.0
+- haskell-lexer-1.1.1
+- quickcheck-io-0.2.0
+- QuickCheck-2.14.3
+- random-1.2.1.1
+- splitmix-0.1.0.4
+- git: https://github.com/RobinWebbers/hrubric.git
+  commit: 3b1b2ea4728fc32fd04c6e4df63052511e45c4bf
+- simplex-method-0.1.0.0
+- parsec-3.1.16.1
+- mtl-2.3.1
