@@ -20,8 +20,10 @@ extra-deps:
 - QuickCheck-2.14.3
 - random-1.2.1.1
 - splitmix-0.1.0.4
-- git: https://github.com/Verification-for-Security/hrubric.git
-  commit: f26a5f1f612ff58d1a0204b06cafa286ab74c077
 - simplex-method-0.1.0.0
 - parsec-3.1.16.1
 - mtl-2.3.1
+- git: https://github.com/Verification-for-Security/hrubric.git
+  commit: d5d68d5980f53c4c30e1d68877ecffdb5daeaa93
+- git: https://github.com/Verification-for-Security/emit-grade.git
+  commit: 0b8fb106b0f6328e44efd6c6ad212d9b73bb65a4

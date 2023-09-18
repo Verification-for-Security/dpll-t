@@ -51,7 +51,6 @@ fresh = do
 --   literal when encountered.
 --
 -- Note: The automatic tests have some requirements on the implementation.
--- - The fresh variable should be on the lhs of the bi-implication
 -- - You should first get a fresh variable before recursing
 -- - On binary operands, the left hand side should be recursed first
 tseitin :: (MonadState ID m, MonadWriter (CNF ID) m) => Prop ID -> m (Prop ID)

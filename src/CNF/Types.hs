@@ -24,7 +24,7 @@ type Or a = [Lit a]
 -- | In a CNF, we either have a literal
 -- or a negation of it. (No double negation!)
 data Lit a = Lit a | Neg a
-  deriving (Show, Eq, Functor, Foldable, Traversable)
+  deriving (Show, Eq, Ord, Functor, Foldable, Traversable)
 
 -- | Negate a literal.
 negate :: Lit a -> Lit a

@@ -3,6 +3,9 @@ module Util
   , cnf
   , comparison
   , linear
+  , CNF'
+  , cnf'
+  , set
   ) where
 
 import AST.Prop (Prop ((:&:), (:|:)))
@@ -12,6 +15,8 @@ import AST.LRA (LRA (..))
 import Parser (bool, lra)
 import Text.Parsec (parse)
 import Data.Text (Text)
+import Data.Set (Set)
+import qualified Data.Set as Set
 
 import CNF.Types (CNF, Or, Lit (..))
 
@@ -37,6 +42,14 @@ cnf :: String -> CNF Text
 cnf text = case ands . prop $ text of
   Just p' -> p'
   Nothing -> error "prop was not in cnf"
+
+type CNF' a = Set (Set (Lit a))
+
+set :: Ord a => CNF a -> CNF' a
+set phi = Set.fromList $ Set.fromList <$> phi
+
+cnf' :: String -> CNF' Text
+cnf' = set . cnf
 
 -- Accumulate all the ands, nesting to ors
 ands :: Prop a -> Maybe (CNF a)

@@ -22,7 +22,7 @@ import qualified CNF.Types as CNF
 -- Note that this solution will be in the rigid CNF format, which
 -- means that the actual result will look more like:
 --
--- $ distribute [a, b, c] [d, [e, f]]
+-- $ distribute [[a], [b], [c]] [[d], [e, f]]
 -- > [ [a, d], [a | e | f], [b, d], [b, e, f], [c, d], [c, e, f] ]
 --
 -- Note: While it is technically correct to order the distribution differently

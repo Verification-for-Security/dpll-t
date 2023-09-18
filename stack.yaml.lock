@@ -117,17 +117,6 @@ packages:
   original:
     hackage: splitmix-0.1.0.4
 - completed:
-    commit: f26a5f1f612ff58d1a0204b06cafa286ab74c077
-    git: https://github.com/Verification-for-Security/hrubric.git
-    name: hrubric
-    pantry-tree:
-      sha256: 69b1667733fced434ca9b55ddccf7bf8bb5555e08b77ce07cc98cf8e5979b7b1
-      size: 517
-    version: 0.1.0.0
-  original:
-    commit: f26a5f1f612ff58d1a0204b06cafa286ab74c077
-    git: https://github.com/Verification-for-Security/hrubric.git
-- completed:
     hackage: simplex-method-0.1.0.0@sha256:308cb0b129e5475df1250e6666c58571f2161276d0b9f29ed8171524ba67591c,1462
     pantry-tree:
       sha256: 873f65871922e7a8fb9663339b7cb2fe210f4761da192deb4e12e72e877e554d
@@ -148,4 +137,26 @@ packages:
       size: 1853
   original:
     hackage: mtl-2.3.1
+- completed:
+    commit: d5d68d5980f53c4c30e1d68877ecffdb5daeaa93
+    git: https://github.com/Verification-for-Security/hrubric.git
+    name: hrubric
+    pantry-tree:
+      sha256: b991e2c06323b6154fe56b8c6ddd7a67b2c82a6b8e85c9a6e7f41f73eb1931e5
+      size: 516
+    version: 0.1.0.0
+  original:
+    commit: d5d68d5980f53c4c30e1d68877ecffdb5daeaa93
+    git: https://github.com/Verification-for-Security/hrubric.git
+- completed:
+    commit: 0b8fb106b0f6328e44efd6c6ad212d9b73bb65a4
+    git: https://github.com/Verification-for-Security/emit-grade.git
+    name: emit-grade
+    pantry-tree:
+      sha256: 4d37faf831de65566bf3dc333aa1b4375cde4b4c8453c20d903bcfd63a998902
+      size: 566
+    version: 0.1.0.0
+  original:
+    commit: 0b8fb106b0f6328e44efd6c6ad212d9b73bb65a4
+    git: https://github.com/Verification-for-Security/emit-grade.git
 snapshots: []
