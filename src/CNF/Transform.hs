@@ -25,17 +25,12 @@ import qualified CNF.Types as CNF
 -- $ distribute [[a], [b], [c]] [[d], [e, f]]
 -- > [ [a, d], [a | e | f], [b, d], [b, e, f], [c, d], [c, e, f] ]
 --
--- Note: While it is technically correct to order the distribution differently
--- (modulo commutativity), this is a nightmare to check programatticaly. For
--- this reason, we require your implementation to distribute in the order shown
--- above!
---
 -- Hint: You may want to define a helper function that distributes a single Or
 -- over the entire second argument.
 --
--- Though won't grade on it, you can try to implement this function without
--- pattern matching on the lists. Haskell already provides a lot of functions
--- to operate on lists!
+-- Though won't grade on it, we recommend you to implement this function
+-- without pattern matching on the lists. Haskell already provides all the 
+-- necessary list operations to do so!
 distribute :: CNF a -> CNF a -> CNF a
 distribute = undefined
 
