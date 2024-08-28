@@ -46,6 +46,9 @@ unlit _ = error "Constraints should not contain equalities"
 --
 -- You may want to look up the Simplex solver library to find out exactly
 -- how it represents this linear form.
+--
+-- Although not required, we advice you to implement and use the helper
+-- functions below.
 simplex :: LRA ID -> Maybe Simplex.PolyConstraint
 simplex = undefined
 

@@ -6,29 +6,46 @@ implementing an SAT solver using the DPLL algorithm. When your SAT solver is
 fully functioning, you can extend it into an SMT solver by incoporating a 
 theory solver. In this case, one over LRA using the Simplex method.
 
+## Getting Started
+
+Make sure you completed the [setup guide](https://github.com/Verification-for-Security/setup-guide).
+Afterwards, set the following toolchain versions through the GHCup TUI.
+
+- `GHC 9.4.8`
+- `HLS 2.9.0.0`
+
 ## Running and testing
 
 This code again features a test bench, which you may run in the same fashion
 with `stack`. The tests again aim to direct you through to code base of this
 assignment and we strongly suggest you follow this!
 
-This assignment also features an executable which may be ran with the following
-command.
-
+```sh
+$ stack test
 ```
+
+This assignment also features an executable which may be ran with the below
+command. By default, this will run the full SMT solver, which will only work
+once the entire assignment is complete. We do allow you to modify `Main` to run
+only a part of the solver. This can be useful when you wish to test a larger
+sequence of code. The executable code for a Haskell project can generally be
+found in the `app` folder.
+
+```sh
 $ stack run
 ```
 
-By default, this will run the full SMT solver. This will only work once the
-entire assignment is complete. We do allow you to modify `Main` to run only
-a part of solver. This can be useful when you wish to test a larger sequence
-of code. The executable code for a Haskell project can generally be found in
-the `app` folder.
+Individual functions may also be tested using GHCI, which is a more lightweight
+alternative to modifying the main function.
+
+```sh
+$ stack ghci
+```
 
 ## Assignment Structure
 
 In this assignment, we provide you with a skeleton which requires a number of
-stubs to be implemented. Every stub contains some explanation of what it is 
+stubs to be implemented. Every stub contains some explanation of what it is
 supposed to do. Read this carefully!
 
 ## SAT solver
@@ -53,7 +70,7 @@ Your first tasks will be to implement the conversion from `Prop a` to `CNF a`.
 
 ## SMT solver
 
-After you've implemented to SAT solver, you will extend it to an SMT solver.
+After you've implemented the SAT solver, you will extend it to an SMT solver.
 This requires you to implement the following two things.
 
 1. Conversion from LRA to a format supported by the theory solver (Simplex)
@@ -70,8 +87,8 @@ environment.
 If there are issues with the submission system, don't panic! We will handle this
 on a case-by-case basis.
 
-If your uploaded submission somehow fail tests that work locally, ping
-us and we will have a look!
+If your uploaded submission somehow fails tests that work locally, ping us and
+we will have a look!
 
 If the online environment suddenly fails to work moments before the deadline,
 don't hesitate to send us your submission through different means (e.g. email).
