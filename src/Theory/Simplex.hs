@@ -44,8 +44,8 @@ unlit _ = error "Constraints should not contain equalities"
 -- You are *not* expected to transform the expression if it is not in this 
 -- shape. Simply returning empty is sufficient in such a case!
 --
--- You may want to look up the Simplex solver library to find out exactly
--- how it represents this linear form.
+-- You may want to look up the Simplex solver library to find out exactly.
+-- How it represents this linear form.
 --
 -- Although not required, we advice you to implement and use the helper
 -- functions below.

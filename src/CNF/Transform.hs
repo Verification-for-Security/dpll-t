@@ -23,7 +23,7 @@ import qualified CNF.Types as CNF
 -- means that the actual result will look more like:
 --
 -- $ distribute [[a], [b], [c]] [[d], [e, f]]
--- > [ [a, d], [a | e | f], [b, d], [b, e, f], [c, d], [c, e, f] ]
+-- > [ [a, d], [a, e, f], [b, d], [b, e, f], [c, d], [c, e, f] ]
 --
 -- Hint: You may want to define a helper function that distributes a single Or
 -- over the entire second argument.

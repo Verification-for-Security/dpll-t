@@ -14,7 +14,7 @@ import Prelude hiding (negate)
 --      []        == True
 type CNF a = [Or a]
 
--- | All elements in the CNF type are Disjunct
+-- | All elements in the Or type are Disjunct
 -- to each other. 
 --
 -- e.g. [p, q, r] == p | q | r
